@@ -5,7 +5,7 @@ description: >-
 
 # Deploying to Production after a HookUpdate Amendment
 
-## Prerequisits
+## Prerequisites
 
 You will need to clone the following repositories.
 
@@ -15,7 +15,7 @@ You will need to clone the following repositories.
 
 ## Process
 
-1. Update the `hook-macros` with the changes to the header files and merge in the changes
+1. Update the `hook-macros` with the changes to the header files and merge in the changes.
 
 - date.h
 - error.h
@@ -25,5 +25,5 @@ You will need to clone the following repositories.
 - sfcodes.h
 
 2. Update the `hooks-macros` git submodule in the `xrpl-hooks-compiler`. See [readme](https://github.com/XRPLF/xrpl-hooks-compiler/blob/master/c2wasm-api/README.md) for instructions.
-4. Redeploy the `xrpl-hooks-compiler`. See [readme](https://github.com/XRPLF/xrpl-hooks-compiler/blob/master/README.md#developing-c2wasm-api-without-building-all-the-binaries) for instructions.
+4. Redeploy the `c2wasm-api` in the  `xrpl-hooks-compiler` repo. See [readme](https://github.com/XRPLF/xrpl-hooks-compiler/blob/master/README.md#developing-c2wasm-api-without-building-all-the-binaries) for instructions.
 3. Update the `xrpl-hooks.readme.io` with any relevant information.
