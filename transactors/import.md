@@ -39,7 +39,7 @@ Import is a new transaction which accepts an XPOP from the Ripple testnet chain 
 
 ## Notes
 
-- If the inner transaction is `AccountSet` no existing or transaction flags will be transfered to the network.
-- If the inner transaction is `SetRegularKey` and the `RegularKey` field is omitted, then the `lsfDisableMaster` will be set on the account.
-- If the inner transaction is `SetRegularKey` then the `lsfPasswordSpent` will be set on the account.
-- If the inner transaction is `SignersListSet` and the signers are not active on the network, the transaction will still result in `tesSUCCESS` and the `Fee` will still be minted however the signers list will NOT be set.
+- If the inner (xpop) transaction is `AccountSet` no existing or transaction flags will be transfered to the network.
+- If the inner (xpop) transaction is `SetRegularKey` with the `RegularKey` field omitted or empty, and a signers list does not exist for the account then the `lsfDisableMaster` flag will be set on the account.
+- If the inner (xpop) transaction is `SetRegularKey` then the `lsfPasswordSpent` flag will be set on the account.
+- If the inner (xpop) transaction is `SignersListSet` and the signers are not active on the network, the transaction will still result in `tesSUCCESS` and the `Fee` will still be minted however the signers list will NOT be set.
