@@ -36,6 +36,7 @@ Import is a new transaction which accepts an XPOP from the Ripple testnet chain 
 - If the account is Non Activated then the `Sequence` must be 0 and the `Fee` must also be 0
 - If the account is Activated then the `Sequence` and the `Fee` are calculated the standard method.
 - If the `Issuer` field is present then the `Fee` must be calculated using the standard method.
+- Tickets are not accepted in any Burn Transactions and would lead to the Import transactions being invalid for minting.
 
 ## Notes
 
