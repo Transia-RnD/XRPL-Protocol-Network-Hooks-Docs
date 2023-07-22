@@ -27,3 +27,7 @@ You will need to clone the following repositories.
 2. Update the `hooks-macros` git submodule in the `xrpl-hooks-compiler`. See [readme](https://github.com/XRPLF/xrpl-hooks-compiler/blob/master/c2wasm-api/README.md) for instructions.
 4. Redeploy the `c2wasm-api` in the  `xrpl-hooks-compiler` repo. See [readme](https://github.com/XRPLF/xrpl-hooks-compiler/blob/master/README.md#developing-c2wasm-api-without-building-all-the-binaries) for instructions.
 3. Update the `xrpl-hooks.readme.io` with any relevant information.
+
+- Transactions will need updates to Transactional Stake Holders.
+- HookAPI will need update to reference.
+- Review code for other changes!!
